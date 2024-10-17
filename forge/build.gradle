@@ -32,9 +32,3 @@ dependencies {
     // Architectury API
     modRuntimeOnly("dev.architectury:architectury-forge:${rootProject.architectury_api_version}")
 }
-
-processResources {
-    filesMatching("mods.toml") {
-        expand "forge_version": rootProject.neoforge_version
-    }
-}

@@ -24,10 +24,3 @@ dependencies {
     // Architectury API
     modRuntimeOnly("dev.architectury:architectury-fabric:${rootProject.architectury_api_version}")
 }
-
-processResources {
-    filesMatching("fabric.mod.json") {
-        expand "fabric_loader_version": rootProject.fabric_loader_version,
-                "fabric_api_version": rootProject.fabric_api_version
-    }
-}
