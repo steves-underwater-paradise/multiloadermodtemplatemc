@@ -35,6 +35,10 @@ subprojects {
     processResources {
         inputs.property "version", project.version
 
+        from(project(":common").sourceSets["main"].resources) {
+            include("assets", "data", "resourcepacks")
+        }
+
         filesMatching(["fabric.mod.json", "mods.toml"]) {
             expand "version": project.version,
                     "mod_id": rootProject.mod_id,
