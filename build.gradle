@@ -1,5 +1,6 @@
 //file:noinspection GroovyAccessibility
 //file:noinspection GroovyAssignabilityCheck
+//file:noinspection DependencyNotationArgument
 
 apply plugin: "architectury-plugin"
 
